@@ -10,7 +10,7 @@ install-editable = {cmd = "pip install -e . -v --no-build-isolation --no-deps", 
 test = "export OMP_NUM_THREADS=1 && pytest src -v -s"
 
 [dependencies]
-python = ">=3.9"
+python = ">=3.10"
 numpy = ">=1.26.3"
 transonic = ">=0.6.4"
 fluiddyn = ">=0.6.2"
