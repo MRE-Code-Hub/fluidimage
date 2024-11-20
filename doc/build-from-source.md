@@ -215,15 +215,28 @@ pipx install pdm -U
 
 Installing in editable mode is a bit particular with Meson, since editable installations
 are incompatible with isolated builds, meaning that all build dependencies have to be
-installed in the main virtual environment! Fortunatelly, it's not too difficult with
-[PDM]. From the root directory of the repository, just run:
+installed in the main virtual environment! Fortunatelly, it's simple with [PDM].
 
-```sh
-pdm install --no-self
+```{warning}
+You should not run the following commands from a virtual environment not related to Fluidimage.
 ```
 
-This command creates a virtual environment and installs all build and runtime
-dependencies. You can then activate this environment and build/install Fluidimage with:
+From the root directory of the repository, just run:
+
+```sh
+pdm sync --clean -v
+```
+
+This command creates a virtual environment, installs all build and runtime dependencies,
+and finally build/install Fluidimage from source.
+
+Alternativelly, one can split this process in two steps. First, install all dependencies:
+
+```sh
+pdm sync --no-self --clean
+```
+
+You can then activate the environment and build/install Fluidimage with:
 
 ```sh
 . .venv/bin/activate
