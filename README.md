@@ -60,7 +60,7 @@ achieved by using
   [Transonic](https://transonic.readthedocs.io)).
 
 [openpiv]: http://www.openpiv.net/
-[piv]: https://en.wikipedia.org/wiki/Particle_image_velocimetry%20(PIV)
+[piv]: https://en.wikipedia.org/wiki/Particle_image_velocimetry
 [pivlab]: https://pivlab.blogspot.com/p/what-is-pivlab.html
 [pivmat]: http://www.fast.u-psud.fr/pivmat/
 [uvmat]: http://servforge.legi.grenoble-inp.fr/projects/soft-uvmat/wiki/UvmatHelp
